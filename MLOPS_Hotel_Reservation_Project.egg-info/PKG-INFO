@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: MLOPS-Hotel-Reservation-Project
+Version: 0.1
+Author: Beniamine
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: requires-dist
