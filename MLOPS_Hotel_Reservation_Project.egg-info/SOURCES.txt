@@ -6,3 +6,6 @@ MLOPS_Hotel_Reservation_Project.egg-info/dependency_links.txt
 MLOPS_Hotel_Reservation_Project.egg-info/requires.txt
 MLOPS_Hotel_Reservation_Project.egg-info/top_level.txt
 src/__init__.py
+src/custom_exception.py
+src/data_ingestion.py
+src/logger.py

@@ -4,5 +4,8 @@ Version: 0.1
 Author: Beniamine
 Requires-Dist: numpy
 Requires-Dist: pandas
+Requires-Dist: google-cloud-storage
+Requires-Dist: scikit-learn
+Requires-Dist: pyyaml
 Dynamic: author
 Dynamic: requires-dist
