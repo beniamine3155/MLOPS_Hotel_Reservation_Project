@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css') }}">
     <title>Hotel Reservation Prediction</title>
 </head>
 <body>
@@ -127,6 +128,15 @@
         <button type="submit">Predict</button>
     </form>
 
+    {% if prediction is not none %}
+    <div class="result">
+        {% if prediction == 0 %}
+        <p>The Customer is going to cancel his reservation</p>
+        {% elif prediction == 1 %}
+        <p>The Customer is not going to cancel his reservation</p>
+        {% endif %}
+    </div>
+    {% endif %}
     
    </div>
 </body>
