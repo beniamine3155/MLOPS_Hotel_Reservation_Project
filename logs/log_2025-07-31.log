@@ -65,3 +65,55 @@
 2025-07-31 09:17:43,233 - INFO - Saving our data in processed folder
 2025-07-31 09:17:43,246 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
 2025-07-31 09:17:43,246 - INFO - Data processing completed sucesfully
+2025-07-31 11:09:15,159 - INFO - Starting our Model Training pipeline
+2025-07-31 11:09:15,159 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-07-31 11:09:15,159 - INFO - Load the data
+2025-07-31 11:09:15,177 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-07-31 11:09:15,177 - INFO - Load the data
+2025-07-31 11:09:15,185 - INFO - Data Split Successfully for model training
+2025-07-31 11:09:15,185 - INFO - Initialize our model
+2025-07-31 11:09:15,185 - INFO - Starting the hyperparameter tuning
+2025-07-31 11:09:15,185 - INFO - Error occur while training model 'sroring'
+2025-07-31 11:09:15,185 - INFO - Evaluate the model
+2025-07-31 11:09:15,185 - ERROR - Error while evaluating model 'NoneType' object has no attribute 'predict'
+2025-07-31 11:09:15,185 - ERROR - Error in model training pipeline Error in /Users/beniaminenahid/Documents/Github Repo/MLOPS_Hotel_Reservation_Project/src/model_training.py, line no - 89 : Failed to evaluate model
+2025-07-31 11:16:20,542 - INFO - Starting our Model Training pipeline
+2025-07-31 11:16:20,542 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-07-31 11:16:20,542 - INFO - Load the data
+2025-07-31 11:16:20,557 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-07-31 11:16:20,557 - INFO - Load the data
+2025-07-31 11:16:20,563 - INFO - Data Split Successfully for model training
+2025-07-31 11:16:20,564 - INFO - Initialize our model
+2025-07-31 11:16:20,564 - INFO - Starting the hyperparameter tuning
+2025-07-31 11:16:20,564 - INFO - Error occur while training model 'sroring'
+2025-07-31 11:16:20,564 - INFO - Evaluate the model
+2025-07-31 11:16:20,564 - ERROR - Error while evaluating model 'NoneType' object has no attribute 'predict'
+2025-07-31 11:16:20,564 - ERROR - Error in model training pipeline Error in /Users/beniaminenahid/Documents/Github Repo/MLOPS_Hotel_Reservation_Project/src/model_training.py, line no - 89 : Failed to evaluate model
+2025-07-31 11:20:02,958 - INFO - Starting our Model Training pipeline
+2025-07-31 11:20:02,958 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-07-31 11:20:02,958 - INFO - Load the data
+2025-07-31 11:20:02,976 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-07-31 11:20:02,976 - INFO - Load the data
+2025-07-31 11:20:02,982 - INFO - Data Split Successfully for model training
+2025-07-31 11:20:02,982 - INFO - Initialize our model
+2025-07-31 11:20:02,982 - INFO - Starting the hyperparameter tuning
+2025-07-31 11:20:02,982 - INFO - Error occur while training model 'sroring'
+2025-07-31 11:20:02,982 - ERROR - Error in model training pipeline Error in /Users/beniaminenahid/Documents/Github Repo/MLOPS_Hotel_Reservation_Project/src/model_training.py, line no - 68 : Faild to train model
+2025-07-31 11:20:41,300 - INFO - Starting our Model Training pipeline
+2025-07-31 11:20:41,300 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-07-31 11:20:41,300 - INFO - Load the data
+2025-07-31 11:20:41,311 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-07-31 11:20:41,311 - INFO - Load the data
+2025-07-31 11:20:41,315 - INFO - Data Split Successfully for model training
+2025-07-31 11:20:41,315 - INFO - Initialize our model
+2025-07-31 11:20:41,315 - INFO - Starting the hyperparameter tuning
+2025-07-31 11:20:51,030 - INFO - Hyperparamter tuning completed
+2025-07-31 11:20:51,030 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-07-31 11:20:51,030 - INFO - Evaluate the model
+2025-07-31 11:20:51,075 - INFO - Accuracy Score : 0.8806183115338883
+2025-07-31 11:20:51,076 - INFO - Precision Score : 0.863667348329925
+2025-07-31 11:20:51,076 - INFO - Recall Score : 0.9039239001189061
+2025-07-31 11:20:51,076 - INFO - F1 Score : 0.8833372066000464
+2025-07-31 11:20:51,076 - INFO - Saving the model
+2025-07-31 11:20:51,095 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-07-31 11:20:51,095 - INFO - Model Training sucesfullly completed

@@ -43,11 +43,11 @@ class ModelTraining:
 
             logger.info("Data Split Successfully for model training")
 
-            return X_train, X_test, y_train, y_test
+            return X_train, y_train, X_test, y_test
         
         except Exception as e:
             logger.info(f"Error occur while loading data {e}")
-            CustomException("Faild to load data", e)
+            raise CustomException("Faild to load data", e)
 
 
     def train_lgbm(self, X_train, y_train):
@@ -65,7 +65,7 @@ class ModelTraining:
                 n_jobs=self.random_search_params["n_jobs"],
                 verbose=self.random_search_params['verbose'],
                 random_state=self.random_search_params['random_state'],
-                scoring=self.random_search_params['sroring']
+                scoring=self.random_search_params['scoring']
             )
 
             random_search.fit(X_train,y_train)
@@ -80,7 +80,7 @@ class ModelTraining:
         
         except Exception as e:
             logger.info(f"Error occur while training model {e}")
-            CustomException("Faild to train model", e)
+            raise CustomException("Faild to train model", e)
     
     def evaluate_model(self, model, X_test, y_test):
         try:
@@ -108,6 +108,39 @@ class ModelTraining:
         except Exception as e:
             logger.error(f"Error while evaluating model {e}")
             raise CustomException("Failed to evaluate model" ,  e)
-
-
         
+    def save_model(self, model):
+        try:
+            os.makedirs(os.path.dirname(self.model_output_path), exist_ok=True)
+
+            logger.info("Saving the model")
+            joblib.dump(model, self.model_output_path)
+
+            logger.info(f"Model saved to {self.model_output_path}")
+
+        except Exception as e:
+            logger.error(f"Error while saving model {e}")
+            raise CustomException("Failed to save model" ,  e)
+
+
+    def run(self):
+        try:
+
+            logger.info("Starting our Model Training pipeline")
+            X_train,y_train,X_test,y_test =self.load_and_split_data()
+
+            best_lgbm_model = self.train_lgbm(X_train,y_train)
+            metrics = self.evaluate_model(best_lgbm_model ,X_test , y_test)
+            self.save_model(best_lgbm_model)
+
+            logger.info("Model Training sucesfullly completed")
+
+        except Exception as e:
+            logger.error(f"Error in model training pipeline {e}")
+            raise CustomException("Failed during model training pipeline" ,  e)
+        
+        
+if __name__=="__main__":
+    trainer = ModelTraining(PROCESSED_TRAIN_DATA_PATH,PROCESSED_TEST_DATA_PATH,MODEL_OUTPUT_PATH)
+    trainer.run()
+
