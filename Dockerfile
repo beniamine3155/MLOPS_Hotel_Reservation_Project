@@ -1,9 +1,10 @@
 # Use a lightweight Python image
 FROM python:slim
 
-# Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
+# Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    PORT=8080
 
 # Set the working directory
 WORKDIR /app
@@ -17,14 +18,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy the application code
 COPY . .
 
-# Install the package in editable mode
+# Install the Python dependencies
 RUN pip install --no-cache-dir -e .
 
-# Train the model before running the application
+# Train the model (optional, but okay)
 RUN python pipeline/training_pipeline.py
 
-# Expose the port that Flask will run on
-EXPOSE 5000
+# Expose port 8080 for Cloud Run
+EXPOSE 8080
 
-# Command to run the app
+# Start the Flask app on Cloud Run compatible port
 CMD ["python", "application.py"]
