@@ -50,9 +50,38 @@ class ModelTraining:
             CustomException("Faild to load data", e)
 
 
+    def train_lgbm(self, X_train, y_train):
+        try:
+            logger.info("Initialize our model")
+            lgbm_model = lgb.LGBMClassifier(random_state=self.random_search_params['random_state'])
+
+            logger.info("Starting the hyperparameter tuning")
+
+            random_search = RandomizedSearchCV(
+                estimator=lgbm_model,
+                param_distributions=self.params_dist,
+                n_iter=self.random_search_params['n_iter'],
+                cv=self.random_search_params['cv'],
+                n_jobs=self.random_search_params["n_jobs"],
+                verbose=self.random_search_params['verbose'],
+                random_state=self.random_search_params['random_state'],
+                scoring=self.random_search_params['sroring']
+            )
+
+            random_search.fit(X_train,y_train)
+
+            logger.info("Hyperparamter tuning completed")
+
+            best_params = random_search.best_params_
+            best_lgbm_model = random_search.best_estimator_
+
+            logger.info(f"Best paramters are : {best_params}")
+            return best_lgbm_model
+        
+        except Exception as e:
+            logger.info(f"Error occur while training model {e}")
+            CustomException("Faild to train model", e)
 
 
 
-
-
-
+        
