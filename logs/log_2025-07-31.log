@@ -1,0 +1,67 @@
+2025-07-31 09:14:19,877 - INFO - Successfully read the yaml file
+2025-07-31 09:14:19,877 - INFO - Loading data from RAW directory
+2025-07-31 09:14:19,877 - INFO - Load the data
+2025-07-31 09:14:19,914 - INFO - Load the data
+2025-07-31 09:14:19,922 - INFO - Start our data processing step
+2025-07-31 09:14:19,923 - INFO - Drop Columns
+2025-07-31 09:14:19,936 - INFO - Applying Label Encoding
+2025-07-31 09:14:19,945 - INFO - Label Mappings are: 
+2025-07-31 09:14:19,945 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-07-31 09:14:19,945 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:14:19,945 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-07-31 09:14:19,945 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-07-31 09:14:19,945 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:14:19,945 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-07-31 09:14:19,945 - INFO - Doing Skewness Handling
+2025-07-31 09:14:19,947 - INFO - Start our data processing step
+2025-07-31 09:14:19,947 - INFO - Drop Columns
+2025-07-31 09:14:19,950 - INFO - Applying Label Encoding
+2025-07-31 09:14:19,952 - INFO - Label Mappings are: 
+2025-07-31 09:14:19,953 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-07-31 09:14:19,953 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:14:19,953 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-07-31 09:14:19,953 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-07-31 09:14:19,953 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:14:19,953 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-07-31 09:14:19,953 - INFO - Doing Skewness Handling
+2025-07-31 09:14:19,954 - ERROR - Error during preprocessing pipeline 'DataProcessor' object has no attribute 'balance_data'
+2025-07-31 09:17:40,970 - INFO - Successfully read the yaml file
+2025-07-31 09:17:40,970 - INFO - Loading data from RAW directory
+2025-07-31 09:17:40,970 - INFO - Load the data
+2025-07-31 09:17:41,005 - INFO - Load the data
+2025-07-31 09:17:41,014 - INFO - Start our data processing step
+2025-07-31 09:17:41,014 - INFO - Drop Columns
+2025-07-31 09:17:41,029 - INFO - Applying Label Encoding
+2025-07-31 09:17:41,036 - INFO - Label Mappings are: 
+2025-07-31 09:17:41,036 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-07-31 09:17:41,036 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:17:41,036 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-07-31 09:17:41,037 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-07-31 09:17:41,037 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:17:41,037 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-07-31 09:17:41,037 - INFO - Doing Skewness Handling
+2025-07-31 09:17:41,039 - INFO - Start our data processing step
+2025-07-31 09:17:41,039 - INFO - Drop Columns
+2025-07-31 09:17:41,041 - INFO - Applying Label Encoding
+2025-07-31 09:17:41,044 - INFO - Label Mappings are: 
+2025-07-31 09:17:41,044 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-07-31 09:17:41,044 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:17:41,044 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-07-31 09:17:41,044 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-07-31 09:17:41,044 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-31 09:17:41,044 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-07-31 09:17:41,044 - INFO - Doing Skewness Handling
+2025-07-31 09:17:41,045 - INFO - Handling Imbalance Data
+2025-07-31 09:17:41,126 - INFO - Data balanced sucesffuly
+2025-07-31 09:17:41,127 - INFO - Handling Imbalance Data
+2025-07-31 09:17:41,138 - INFO - Data balanced sucesffuly
+2025-07-31 09:17:41,138 - INFO - Starting the feature selection step
+2025-07-31 09:17:43,177 - INFO - Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'type_of_meal_plan' 'room_type_reserved']
+2025-07-31 09:17:43,177 - INFO - Feature slection completed sucesfully
+2025-07-31 09:17:43,184 - INFO - Saving our data in processed folder
+2025-07-31 09:17:43,233 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2025-07-31 09:17:43,233 - INFO - Saving our data in processed folder
+2025-07-31 09:17:43,246 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2025-07-31 09:17:43,246 - INFO - Data processing completed sucesfully
